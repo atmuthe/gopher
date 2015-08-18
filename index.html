@@ -1,28 +1,28 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
- 	<title>jQuery Square Menu by Pete R. | The Pete Design</title>
-	<meta name="title" content="jQuery Square Menu by Pete R. | The Pete Design" />
-	<meta name="description" content="Create a Square-like Menu Animation for Website using jQuery and CSS3" />
-	<link rel="image_src" href="/images/square_menu_image.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <title>jQuery Square Menu by Pete R. | The Pete Design</title>
+  <meta name="title" content="jQuery Square Menu by Pete R. | The Pete Design" />
+  <meta name="description" content="Create a Square-like Menu Animation for Website using jQuery and CSS3" />
+  <link rel="image_src" href="/images/square_menu_image.png" />
 
-	<meta content="http://www.thepetedesign.com/demos/square_menu_demo.html" property="og:url" />
-	<meta content="http://www.thepetedesign.com/images/square_menu_image.png" property="og:image" />
-	<link rel="shortcut icon" id="favicon" href="favicon.png">
-	<meta name="author" content="Pete R.">
-	<link rel="canonical" href="http://www.thepetedesign.com/demos/square_menu_demo.html" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href='/home/qr/Documents/gopher/gopher/css/square_menu.css' rel='stylesheet' type='text/css'>
+  <meta content="http://www.thepetedesign.com/demos/square_menu_demo.html" property="og:url" />
+  <meta content="http://www.thepetedesign.com/images/square_menu_image.png" property="og:image" />
+  <link rel="shortcut icon" id="favicon" href="favicon.png">
+  <meta name="author" content="Pete R.">
+  <link rel="canonical" href="http://www.thepetedesign.com/demos/square_menu_demo.html" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='css/square_menu.css' rel='stylesheet' type='text/css'>
 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="/home/qr/Documents/gopher/gopher/js/jquery.square_menu.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.square_menu.js"></script>
   <style>
     html {
       height: 100%;
@@ -43,10 +43,10 @@
     }
 
     .wrapper {
-    	height: auto !important;
-    	height: 100%;
-    	margin: 0 auto;
-    	overflow: hidden;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto;
+      overflow: hidden;
     }
 
     a {
@@ -286,7 +286,13 @@
      background-repeat: no-repeat;
    }
  </style>
+ <script>
+   $(document).ready( function() {
+     $(".sidemenu").square_menu();
+   });
 
+
+ </script>
 </head>
 <div class="container-fluid">
 <body background="images/qwe.jpg">
