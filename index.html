@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 	<title>jQuery Square Menu by Pete R. | The Pete Design</title>
+	<meta name="title" content="jQuery Square Menu by Pete R. | The Pete Design" />
+	<meta name="description" content="Create a Square-like Menu Animation for Website using jQuery and CSS3" />
+	<link rel="image_src" href="/images/square_menu_image.png" />
+
+	<meta content="http://www.thepetedesign.com/demos/square_menu_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/square_menu_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png">
+	<meta name="author" content="Pete R.">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/square_menu_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='/home/qr/Desktop/my_challenge/gopher/square_menu.css' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="/home/qr/Desktop/my_challenge/gopher/jquery.square_menu.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      background-size:cover;
+      background-position: 100% 20%;
+      background-repeat: no-repeat;
+
+
+    }
+
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color:white;
+      font-size:10px
+    }
+
+
+
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #2E3B4E;
+      font-weight: 100;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-size: 70px;
+    }
+    h2 {
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .pointer {
+      color: #00B0FF;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: fixed;
+      top: 62px;
+      left: 25px;
+    }
+    pre {
+      margin: 80px auto;
+    }
+    pre code {
+      padding: 35px;
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+    .main h1 {
+      padding:20px 50px 10px;
+      float: left;
+      width: 100%;
+      font-size: 50px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      margin: 0;
+      padding-top: 25px;
+      font-family: 'open sans';
+      text-transform: uppercase;
+    }
+
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 1em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: open sans;
+    }
+    .reload:hover{
+      background: #A2261E;
+    }
+    .btn {
+      width: 230px;
+      color: #fff;
+      border: none;
+      margin-left: 10px;
+      background: #2186B8;
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #1494D3;
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: #fff;
+      padding: 10px;
+      font-weight: 100;
+      text-transform: capitalize;
+      font-style: italic;
+      font-size: 14px;
+      margin: 0 0 60px 0;
+      float: left;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+    .credit a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: #86B4CC;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #fff;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+    .back:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    body .sm-button {
+      position: relative;
+      top: 0;
+      right: 0;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 28px;
+      z-index: 10;
+    }
+
+    body .sm-button:hover {
+      border-bottom: 1px solid white;
+
+    }
+    .page-container {
+      min-height: 300px;
+    }
+
+    .sm-nav:nth-child(2) {
+
+    }
+
+    .sm-menu .sm-nav:nth-child(2) .nav-inner > a {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 32px;
+      font-weight: 300;
+      display: block;
+      color: white;
+    }
+    .sub-menu  {
+     color:white;
+     width: 160%;
+     padding: 0px 18px;
+     top: 100%;
+     left: 0px;
+     z-index: -1;
+     opacity: 3;
+     transition: opacity linear 0.15s;
+     list-style:none;
+     position:relative;
+     float:left;
+     margin:0;
+   }
+   #mar
+   {
+     padding: 0;
+     text-align: center;
+     font-family: 'open sans';
+     position: relative;
+     margin: 0;
+     height: 100%;
+     background-size:cover;
+     background-position: 100% 20%;
+     background-repeat: no-repeat;
+   }
+ </style>
+ <script>
+   $(document).ready( function() {
+     $(".sidemenu").square_menu();
+   });
+
+
+ </script>
+</head>
+<div class="container-fluid">
+<body background="/home/qr/Desktop/my_challenge/gopher/qwe.jpg">
+  <div class="wrapper">
+   <div  class="main">
+     <div class="header">
+      <h1>GOPHERCON INDIA 2016</h1>
+      <h2>The Go Conference in India @VIJAYAVADA</h2>
+
+
+    </div>
+    <marquee id="mar"  ><span><img src="/home/qr/Desktop/my_challenge/gopher/conference.jpg"style="height:400x; width:640px;"></span>
+      <span><img src="/home/qr/Desktop/my_challenge/gopher/Copy_of_UC_Conference_foyer_shot.jpg" style="height:258px; width:640px;"></span>
+      <span><img src="/home/qr/Desktop/my_challenge/gopher/presaddress-09.jpg"style="height:258px; width:640px;"></span></marquee>
+
+
+      <div  class="page-container">
+        <div class="sidemenu">
+          <nav class="left">
+            <a  href="about.html">About</a>
+
+            <a href="events.html">Events</a>
+          </nav>
+          <nav class="right">
+            <a  href="SPONSORS.html">SPONSORS</a>
+           <!--  <ul class="sub-menu">
+
+              <li><a class='b'   href="http://www.qwinixtech.com/">Qwinix</a></li>
+              <li><a  class= 'b' href="http://exotel.in/">Exotel</a></li>
+              <li><a class='b' href="https://www.justickets.in/">Justickets</a></li>
+
+            </ul> -->
+            <a class='a'   href="SPEAKERS.html" target="blank">SPEAKERS</a>
+            <a  class='a'  href="feedback.html">Feedback</a>
+
+          </div>
+        </div>
+      </div>
+</div>
+    </body>
+    </html>
